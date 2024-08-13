@@ -1,2 +1,2 @@
 # js-vs-wasm
-just testing wasm performance
+just testing wasm (using Rust) performance
