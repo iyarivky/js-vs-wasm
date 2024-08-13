@@ -2,7 +2,7 @@
 # see: https://developers.google.com/idx/guides/customize-idx-env
 { pkgs, ... }: {
   # Which nixpkgs channel to use.
-  channel = "stable-24.05"; # or "unstable"
+  channel = "unstable" ;#"stable-24.05"
   # Use https://search.nixos.org/packages to find packages
   packages = [
     pkgs.cargo
@@ -11,6 +11,7 @@
     pkgs.stdenv.cc
     pkgs.wasm-pack
     pkgs.python313
+    pkgs.llvmPackages.bintools
   ];
   # Sets environment variables in the workspace
   env = {
